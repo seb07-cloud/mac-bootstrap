@@ -55,6 +55,7 @@ apps=(
     Steam
     Stream Deck
     Telegram 
+    Twitter
     TinkerTool
     The Unarchiver
     TradingView
@@ -80,7 +81,12 @@ brew install git
 
 for val in ${apps[@]}; do
    echo "Installing $val..."
-   brew install --cask $val
+   if test ! $(which $val); then
+    echo "Installing $val..."
+    brew install --cask $val
+   fi
+done
+
 done
 
 echo "Done installing!"
