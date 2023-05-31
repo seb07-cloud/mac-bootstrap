@@ -44,7 +44,7 @@ declare -a StringArray=(
   "menuwhere"
   "microsoft-edge"
   "microsoft-remote-desktop"
-  "microsoft-office" # This will include Excel, Word, Powerpoint, OneNote
+  "microsoft-office" 
   "microsoft-onedrive"
   "obsidian"
   "postman"
