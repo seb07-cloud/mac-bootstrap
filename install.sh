@@ -87,7 +87,12 @@ fi
 brew upgrade
 brew update
 brew tap caskroom/cask
-
+brew tap 1password/tap
+brew tap azure/bicep
+brew tap homebrew/bundle
+brew tap jandedobbeleer/oh-my-posh
+brew tap terraform-docs/tap
+brew update
 
 #############################################
 ### Generate ssh keys & add to ssh-agent
@@ -186,6 +191,19 @@ brew link curl --force
 brew install grep
 brew install trash  # move to osx trash instead of rm
 brew install less
+brew install htop
+brew install jq
+brew install packer
+brew install terraform
+brew install terraform-docs
+brew install azure-cli
+brew install bicep
+brew install btop
+brew install oh-my-posh
+brew install wget
+brew install curl
+brew install speedtest-cli
+brew install switchaudio-osx
 
 ### Python
 brew install python
@@ -218,17 +236,10 @@ brew install --cask shottr
 brew install --cask timing  # time and project tracker
 
 ### Keyboard & Mouse
-brew install --cask karabiner-elements  # remap keys, emacs shortcuts
-brew install --cask scroll-reverser  # allow natural scroll for trackpad, not for mouse
+brew install --cask sensiblesidebuttons  # remap keys, emacs shortcuts
 
 ### Quicklook plugins https://github.com/sindresorhus/quick-look-plugins
-brew install --cask qlcolorcode # syntax highlighting in preview
-brew install --cask qlstephen  # preview plaintext files without extension
-brew install --cask qlmarkdown  # preview markdown files
-brew install --cask quicklook-json  # preview json files
-brew install --cask epubquicklook  # preview epubs, make nice icons
-brew install --cask quicklook-csv  # preview csvs
-
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo
 
 ### Chat / Video Conference
 brew install --cask microsoft-teams
@@ -391,7 +402,6 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Use function F1, F, etc keys as standard function keys
 defaults write NSGlobalDomain com.apple.keyboard.fnState -bool true
-
 
 ###############################################################################
 # Screenshots / Screen                                                        #
