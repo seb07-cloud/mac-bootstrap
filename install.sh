@@ -176,8 +176,6 @@ brew install --cask 1password-cli
 
 ### Developer Tools
 brew install --cask iterm2
-brew install --cask warp
-
 
 ### Development
 brew install --cask docker
